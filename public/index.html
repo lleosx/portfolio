@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Leonardo Satin · Portfólio</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <meta name="description" content="Leonardo, formado em Análise e Desenvolvimento de Sistemas. Sites, sistemas e projetos reais.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +19,8 @@
   --line:#262e37;
   --ink:#eef1f4;
   --muted:#93a0ad;
-  --accent:#f2b84b;
-  --accent-ink:#1a1306;
+  --accent:#38a9f5;
+  --accent-ink:#04121f;
   --ok:#4fd18b;
   --wip:#f2b84b;
   --done:#8ea6ff;
@@ -38,7 +40,8 @@ a{color:inherit}
 nav{position:sticky; top:0; z-index:5; background:rgba(13,16,20,.85); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
 nav .container{display:flex; justify-content:space-between; align-items:center; height:60px; gap:16px}
 .logo{font-family:var(--display); font-weight:700; font-size:19px; text-decoration:none; letter-spacing:-.01em}
-.logo span{color:var(--accent)}
+.logo{display:inline-flex; align-items:center; gap:10px}
+.logo img{height:32px; width:auto; display:block}
 nav ul{display:flex; gap:22px; list-style:none; margin:0; padding:0; font-size:14px; color:var(--muted)}
 nav ul a{text-decoration:none} nav ul a:hover{color:var(--ink)}
 
@@ -103,7 +106,7 @@ h2{font-family:var(--display); font-weight:700; font-size:clamp(28px,4vw,38px); 
 .dash{display:grid; grid-template-columns:62px 1fr; min-height:170px}
 .dash .side{background:#1f3b63; padding:10px 8px; display:grid; align-content:start; gap:7px}
 .dash .side i{display:block; height:5px; border-radius:3px; background:rgba(255,255,255,.35)}
-.dash .side i:first-child{background:#f2b84b; width:70%}
+.dash .side i:first-child{background:#38a9f5; width:70%}
 .dash .main{padding:10px; display:grid; align-content:start; gap:8px}
 .dash .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
 .dash .cards div{background:#fff; border:1px solid #e1e6ec; border-radius:6px; padding:6px; display:grid; gap:4px}
@@ -200,7 +203,7 @@ footer .container{display:flex; justify-content:space-between; gap:12px; flex-wr
 
 <nav>
   <div class="container">
-    <a class="logo" href="#inicio">Leonardo Satin<span>.</span></a>
+    <a class="logo" href="#inicio"><img src="logo-ls.png" alt="" width="43" height="32">Leonardo Satin</a>
     <ul>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
