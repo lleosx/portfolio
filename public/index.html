@@ -156,6 +156,16 @@ h2{font-family:var(--display); font-weight:700; font-size:clamp(28px,4vw,38px); 
 .edu b{display:block; font-family:var(--display); font-weight:600; font-size:16px}
 .edu span{font-size:14px; color:var(--muted)}
 
+.edu-grid{display:grid; grid-template-columns:1fr 1.3fr; gap:28px; align-items:start}
+.edu-grid h3{font-family:var(--display); font-weight:600; font-size:15px; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; margin:0 0 12px}
+.certs{list-style:none; margin:0; padding:0; display:grid; gap:10px}
+.certs li{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:grid; grid-template-columns:1fr auto; gap:4px 14px; align-items:start}
+.certs b{font-family:var(--display); font-weight:600; font-size:16px; line-height:1.3}
+.certs .h{font-style:normal; font-family:var(--mono); font-size:13px; color:var(--accent); white-space:nowrap; font-variant-numeric:tabular-nums}
+.certs span{grid-column:1 / -1; font-size:14px; color:var(--muted)}
+.certs-total{margin:12px 0 0; font-size:14px; color:var(--muted)}
+.edu{margin-top:0}
+
 footer{padding:28px 0 40px; font-size:13px; color:var(--muted)}
 footer .container{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
 
@@ -168,6 +178,7 @@ footer .container{display:flex; justify-content:space-between; gap:12px; flex-wr
   .project{grid-template-columns:1fr}
   .shot{min-height:260px}
   .about{grid-template-columns:1fr; gap:28px}
+  .edu-grid{grid-template-columns:1fr}
   nav ul{display:none}
 }
 @media (max-width:440px){
@@ -193,6 +204,7 @@ footer .container{display:flex; justify-content:space-between; gap:12px; flex-wr
     <ul>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#formacao">Formação</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="https://www.instagram.com/leo_satinn" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
@@ -318,7 +330,34 @@ footer .container{display:flex; justify-content:space-between; gap:12px; flex-wr
       <div class="skill"><b>Front-end</b><span>HTML, CSS e JavaScript</span></div>
       <div class="skill"><b>Back-end</b><span>Java e Spring Boot</span></div>
       <div class="skill"><b>Banco de dados</b><span>MySQL e Supabase</span></div>
-      <div class="skill"><b>Publicação</b><span>Netlify e GitHub</span></div>
+      <div class="skill"><b>Publicação</b><span>GitHub, Cloudflare e Netlify</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="container">
+    <div class="sec-head">
+      <div><p>// formação</p><h2>Formação e certificados</h2></div>
+    </div>
+    <div class="edu-grid">
+      <div>
+        <h3>Formação</h3>
+        <ul class="edu">
+          <li><div><b>Análise e Desenvolvimento de Sistemas</b><span>UNIVALE</span></div><span class="status done">Concluído</span></li>
+          <li><div><b>Manutenção de Computadores</b><span>SENAI</span></div><span class="status wip">Cursando</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Eventos e palestras</h3>
+        <ul class="certs">
+          <li><b>UX Experience Day: projetos reais, soluções pensadas para pessoas</b><em class="h">4h</em><span>UNIVALE · jun 2025</span></li>
+          <li><b>Decifra-me ou te Devoro: a automação e os novos paradigmas do sucesso na carreira em TI</b><em class="h">4h</em><span>UNIVALE · abr 2025</span></li>
+          <li><b>DevParaná na Estrada</b><em class="h">2h</em><span>UNIVALE · mar 2025</span></li>
+          <li><b>Feira de Inovação AGROTECH (Projeto de Extensão)</b><em class="h">4h</em><span>UNIVALE · mai 2024</span></li>
+        </ul>
+        <p class="certs-total">14 horas em eventos de tecnologia, com certificados emitidos pela faculdade.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -329,10 +368,6 @@ footer .container{display:flex; justify-content:space-between; gap:12px; flex-wr
       <div class="sec-head"><div><p>// sobre</p><h2>Sobre mim</h2></div></div>
       <p>Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela <strong>UNIVALE</strong> e gosto de aprender construindo. Cada projeto aqui começou com uma necessidade real: um sistema completo para o meu TCC e um negócio da cidade que precisava receber pedidos.</p>
       <p>Gosto de <strong>música</strong> e de <strong>meio ambiente</strong>, e esses interesses aparecem no que eu crio.</p>
-      <ul class="edu" aria-label="Formação">
-        <li><div><b>Análise e Desenvolvimento de Sistemas</b><span>UNIVALE</span></div><span class="status done">Concluído</span></li>
-        <li><div><b>Manutenção de Computadores</b><span>SENAI</span></div><span class="status wip">Cursando</span></li>
-      </ul>
     </div>
     <div class="cta" id="contato">
       <p style="font-family:var(--mono);font-size:13px;color:var(--accent)">// contato</p>
