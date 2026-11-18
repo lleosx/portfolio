@@ -1,0 +1,8 @@
+{
+  // Site estático: tudo dentro de /public é publicado
+  "name": "leosatin",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
